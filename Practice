@@ -1,0 +1,12 @@
+alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+text = input("Type your message:\n").lower()
+# shift = int(input("Type the shift number:\n"))
+text_list = list(text.strip(" "))
+text_value = len(text_list)
+alphabet_value = len(alphabet)
+new_list = []
+#   new_alphabet = enumerate(alphabet)
+for index in range(text_value):
+    if alphabet[index] == text_list[index]:
+        new_list.append(index)
+print(new_list)
